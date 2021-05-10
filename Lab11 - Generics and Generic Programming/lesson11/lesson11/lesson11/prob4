@@ -1,0 +1,17 @@
+a-
+	List<Integer> ints = new ArrayList<>();
+	ints.add(1);
+	ints.add(2);
+	List<? extends Number> numz = ints;
+	double dbl = sum(numz);
+	
+	numz.add(3.14); // compile error , add is not allowed.
+
+b-
+	List<Object> objs = new ArrayList<>();
+	objs.add(1);
+	objs.add("two");
+	List<? super Integer> ints = objs;
+	ints.add(3);
+	
+	double dbl = sum(ints); // Compile error super Integer can not extend Number

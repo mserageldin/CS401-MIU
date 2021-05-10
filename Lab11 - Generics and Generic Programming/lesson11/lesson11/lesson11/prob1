@@ -1,0 +1,13 @@
+a-
+	List<Integer> ints = new ArrayList<>();
+	ints.add(1);
+	ints.add(2);
+	List<Number> numz = ints; // compile error , not covariance
+	numz.add(3.14);
+
+b-
+	List<Integer> ints = new ArrayList<>();
+	ints.add(1);
+	ints.add(2);
+	List<? extends Number> numz = ints; // OK wildcat bound.
+	numz.add(3.14); // compile error , add is not allowed.

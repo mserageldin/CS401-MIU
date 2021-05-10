@@ -1,0 +1,7 @@
+A-Function<Employee, String> getName = (Employee e) -> e.getName();
+B-Function<Employee, String,Boolean> setName = (Employee e,String s) -> e.setName(s);
+C-Function<String, String,Integer> compareTo = (String s1,String s2) -> s1.compareTo(s2);
+D-Function<Integer, Integer,Double> mathPow = (Integer x,Integer y) -> Math.pow(x,y);
+E-Function<Apple, Double> getWeight = (Apple a) -> a.getWeight();
+F-Function<String, Integer> intParse = (String x) -> Integer.parseInt(x);
+G-Function<Employee, Employee,Integer> intParse = (Employee e1, Employee e2) -> comp.compare(e1,e2);
